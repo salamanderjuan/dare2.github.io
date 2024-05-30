@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DARE - Conectando Vidas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #e0f7fa;
+    }
+    
+    .container {
+        display: flex;
+        background-color: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+        height: 100%;
+    }
+    
+    .left, .right {
+        padding: 20px;
+    }
+    
+    .left {
+        background-color: #ffffff;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .logo {
+        width: 150px;
+        margin-bottom: 20px;
+        border-radius: 100px;
+    }
+    
+    .left h1 {
+        color: #155D7B;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    .left p {
+        color: #155D7B;
+        text-align: center;
+        font-family: fira 'Courier New', Courier, monospace;
+        width: 80%;
+    }
+    
+    .right {
+        background-color: rgba(149, 203, 224, 1);
+        flex: 2;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .right h2 {
+        color: white;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.links {
+    display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 600px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    margin-top: 5px;
+   
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+form{
+    width: 95%;
+    max-width: 600px;
+}    
+    form .input{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    
+    label {
+        margin-bottom: 5px;
+        color: #0077b6;
+    }
+    
+    input {
+        margin-bottom: 15px;
+        padding: 10px;
+        border: none;
+        border-radius: 50px;
+        
+    }
+    input::placeholder{
+        color: #155D7B;
+    }
+    
+    
+    .btn-iniciar-sesion {
+        
+        padding: 10px;
+        border: none;
+        border-radius: 50px;
+        background-color: #155D7B;
+        color: white;
+        cursor: pointer;
+       max-width: 630px;
+        float: right; 
+         margin: 20px; 
+
+    }
+    
+    
+    .btn-iniciar-sesion:hover {
+        background-color: #155D7B;
+    }
+    
+    a {
+        align-items: start;
+        color: white;
+        text-decoration: none;
+        margin-top: 10px;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    @media (max-width: 500px) {
+  body,.container,.right {
+    display: inline-block;
+    width: 100%;
+  }
+  form .input{
+    width: 90%;
+    margin-top: 20px ;
+  }
+  .right h2 {
+        color: white;
+        font-size: 24px;
+        margin-bottom: 20px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  
+}
+    </style>
+    
+    <div class="container">
+        <div class="left">
+            <img src="photo_2024-03-31_17-52-34.jpg" alt="DARE Logo" class="logo">
+            <h1>¿Quienes Somos?</h1>
+            <p>Dare es una organización sin ánimo de lucro que tiene como objetivo. Tiene como misión empoderar a las comunidades vulnerables a través de la educación, la salud y el desarrollo sostenible, brindándoles las herramientas y el apoyo necesario para alcanzar su máximo potencial.</p>
+        </div>
+        <div class="right">
+            <h2>Iniciar Sesión</h2>
+            <form>
+                
+                <input class="input" type="email" id="email" name="email" placeholder="Correo" required>
+                
+                
+                <input class="input" type="password" id="password" name="password" placeholder="Contraseña" required>
+                
+                
+                <a href="index.html"><input class="btn-iniciar-sesion" type="button" value="Iniciar sesion"  ></a>
+            </form>
+           <div class="links">
+                        <a href="#">Olvidaste la contraseña</a>
+                        <a href="registro.html">Registrar</a>
+                    </div>
+        </div>
+    </div>
+</body>
+</html>

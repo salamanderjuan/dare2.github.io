@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de publicaciones</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <style>
+      body {
+      font-family: sans-serif;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .publicacion {
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+      padding: 15px;
+    }
+
+    .publicacion img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      margin-right: 20px;
+    }
+
+    .publicacion h3 {
+      margin-top: 0;
+    }
+
+    .publicacion p {
+      margin-bottom: 0;
+    }/* Tus estilos aquí */
+  </style>
+  <div class="container">
+    <h1>Publicaciones</h1>
+    <div class="publicaciones"></div>
+  </div>
+  <script>
+    const publicaciones = [
+    {
+        nombre: "Juan Pérez",
+        descripcion: "Necesito ayuda para comprar comida para mi familia.",
+        problema: "Mi familia está pasando por un momento difícil y no tenemos suficiente dinero para comer.",
+        foto: "https://example.com/foto1.jpg"
+      },
+      {
+        nombre: "Fundación Esperanza",
+        descripcion: "Necesitamos donaciones para construir un nuevo refugio para animales.",
+        problema: "Muchos animales abandonados no tienen un lugar seguro donde vivir.",
+        foto: "https://example.com/foto2.jpg"
+      },
+      {
+        nombre: "María García",
+        descripcion: "Necesito ayuda para pagar la operación de mi hijo.",
+        problema: "Mi hijo tiene una enfermedad grave y la operación es muy costosa.",
+        foto: "https://example.com/foto3.jpg"
+      }/* Tus publicaciones aquí */
+    ];
+
+    function cargarPublicaciones() {
+      const publicacionesEl = document.querySelector('.publicaciones');
+      publicaciones.forEach(publicacion => {
+        const publicacionHTML = `
+          <div class="publicacion">
+            <img src="${publicacion.foto}" alt="${publicacion.nombre}">
+            <h3>${publicacion.nombre}</h3>
+            <p>${publicacion.descripcion}</p>
+            <p>${publicacion.problema}</p>
+          </div>
+        `;
+        publicacionesEl.innerHTML += publicacionHTML;
+      }); /* El resto de tu código aquí */
+    }
+
+    window.onload = cargarPublicaciones;
+  </script>
+</body>
+</html>

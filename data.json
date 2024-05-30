@@ -1,0 +1,20 @@
+[
+    {
+      "nombre": "Juan Pérez",
+      "descripcion": "Necesito ayuda para comprar comida para mi familia.",
+      "problema": "Mi familia está pasando por un momento difícil y no tenemos suficiente dinero para comer.",
+      "foto": "https://example.com/foto1.jpg"
+    },
+    {
+      "nombre": "Fundación Esperanza",
+      "descripcion": "Necesitamos donaciones para construir un nuevo refugio para animales.",
+      "problema": "Muchos animales abandonados no tienen un lugar seguro donde vivir.",
+      "foto": "https://example.com/foto2.jpg"
+    },
+    {
+      "nombre": "María García",
+      "descripcion": "Necesito ayuda para pagar la operación de mi hijo.",
+      "problema": "Mi hijo tiene una enfermedad grave y la operación es muy costosa.",
+      "foto": "https://example.com/foto3.jpg"
+    }
+     ]
