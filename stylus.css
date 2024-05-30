@@ -524,7 +524,7 @@ border-radius: 50%;
     color: white;
     text-decoration: none;
 }
-@media(max-width:500px){
+@media(max-width:600px){
     div#nav,body,html{
        width: 50px!important;
 
